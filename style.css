@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+/* Estilo para a div principal da calculadora (classe que adicionei no HTML) */
+.calculadora-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para os inputs */
+input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    /* Ajuste a largura conforme desejar */
+    text-align: center;
+}
+
+/* Estilo para os botões de operação */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    /* Azul padrão */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o span do resultado */
+#dvResultadoCalculo {
+    display: inline-block;
+    /* Para permitir padding e border */
+    border: solid 1px #aaa;
+    padding: 5px 10px;
+    /* Mais padding para melhor visualização */
+    background-color: #e9ecef;
+    /* Um fundo leve para o resultado */
+    border-radius: 4px;
+    min-width: 80px;
+    /* Garante que o resultado tenha um espaço mínimo */
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
